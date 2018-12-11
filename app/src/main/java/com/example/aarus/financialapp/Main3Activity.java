@@ -6,7 +6,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 public class Main3Activity extends AppCompatActivity {
-    String[] items = new String[] {"Name: ", "Interest Rate: ", "Certificate Deposit Rate: ", "ATM fee: ", "Overdraft fee: ", "Minimum balance: ", "Local ATMS: "};
+    String[] items = new String[] {"Name: ", "Certificate Deposit Rate: ", "ATM fee: ", "Overdraft fee: ", "Minimum balance: ", "Card Replacement Fee: "};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
