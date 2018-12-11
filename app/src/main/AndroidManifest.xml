@@ -54,7 +54,6 @@
         <activity android:name=".Main2Activity" />
         <activity android:name=".Main22Activity" />
         <activity android:name=".marine_bank" />
-        <activity android:name=".Main3Activity_not_needed"></activity>
         <uses-library
             android:name="org.apache.http.legacy"
             android:required="false" />
