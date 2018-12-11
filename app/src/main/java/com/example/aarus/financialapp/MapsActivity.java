@@ -20,6 +20,7 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
@@ -151,32 +152,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             }
             mMap.setMyLocationEnabled(true);
 
-            //init();
-
-            mMap.clear();
-            String bank = "bank";
-            String url = getUrl(latitude, longitude, bank);
-            Object dataTransfer[] = new Object[2];
-            dataTransfer[0] = mMap;
-            dataTransfer[1] = url;
-
-            GetNearbyPlacesData getNearbyPlacesData = new GetNearbyPlacesData();
-            getNearbyPlacesData.execute(dataTransfer);
-            Toast.makeText(MapsActivity.this, "Showing Nearby Banks", Toast.LENGTH_LONG).show();
+            init();
         }
     }
 
-    private String getUrl(double latitude, double longitude, String nearbyPlace) {
-        StringBuilder googlePlaceUrl = new StringBuilder("https://maps.googleapis.com/maps/api/place/nearbysearch/json?");
-        googlePlaceUrl.append("location"+latitude+","+longitude);
-        googlePlaceUrl.append("&radius="+PROXIMITY_RADIUS);
-        googlePlaceUrl.append("&type="+nearbyPlace);
-        googlePlaceUrl.append("&sensor=true");
-        googlePlaceUrl.append("&key=AIzaSyBOmfTswYEygPl4G4Z8crYwXzlMAJ7k0J8");
-
-        return googlePlaceUrl.toString();
-    }
-/*
     private void init() {
         Log.d(TAG, "init: initializing");
         geoLocate();
@@ -199,6 +178,5 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             moveCamera(new LatLng(address.getLatitude(), address.getLongitude()), DEFAULT_ZOOM, address.getAddressLine(0));
         }
 
-        https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=mongolian%20grill&inputtype=textquery&fields=photos,formatted_address,name,opening_hours,rating&locationbias=circle:2000@47.6918452,-122.2226413&key=YOUR_API_KEY
-    } */
+    }
 }
