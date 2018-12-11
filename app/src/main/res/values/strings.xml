@@ -6,4 +6,11 @@
     <string name="title_activity_maps">Map</string>
     <string name="title_item_list">Items</string>
     <string name="title_item_detail">Item Detail</string>
+    <string name="pnc_financial_services">PNC Financial Services</string>
+    <string name="marine_bank">Marine Bank</string>
+    <string name="chase_bank">Chase Bank</string>
+    <string name="bank_champaign">Bank Champaign</string>
+    <string name="first_federal_savings_bank_of_champaign_urbana">First Federal Savings Bank of Champaign- Urbana</string>
+    <string name="central_illinois_bank">Central Illinois Bank</string>
+    <string name="busey_bank">Busey Bank</string>
 </resources>

@@ -41,7 +41,14 @@
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps" />
         <activity android:name=".Main2Activity" />
-        <activity android:name=".Main3Activity"></activity>
+        <activity android:name=".Main3Activity_not_needed" />
+        <activity android:name=".Main22Activity" />
+        <activity android:name=".busey_bank" />
+        <activity android:name=".marine_bank" />
+        <activity android:name=".chase" />
+        <activity android:name=".bank_champaign" />
+        <activity android:name=".first_federal" />
+        <activity android:name=".central_illinois_bank"></activity>
     </application>
 
 </manifest>
