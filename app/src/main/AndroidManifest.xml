@@ -41,7 +41,6 @@
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps" />
         <activity android:name=".Main2Activity" />
-        <activity android:name=".Main3Activity_not_needed" />
         <activity android:name=".Main22Activity" />
         <activity android:name=".busey_bank" />
         <activity android:name=".marine_bank" />
